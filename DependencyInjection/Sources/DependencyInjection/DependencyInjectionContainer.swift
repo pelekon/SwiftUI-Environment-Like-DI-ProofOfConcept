@@ -19,14 +19,21 @@ public final class DependencyInjectionContainer {
         let objectId = ObjectIdentifier(key)
         guard let provider = container[objectId] as? DependencyValueProvider<T.Value> else { return nil }
         
-        switch provider {
-        case .singleton(let value):
-            return value
-        case .created(let factory):
-            return factory()
-        case .resolved(let resolver):
-            return resolver(self)
+        return objectFromProvider(provider)
+    }
+    
+    public subscript<T: Injectable>(_ objectType: T.Type) -> T.KeyType.Value {
+        let objectId = ObjectIdentifier(T.KeyType.self)
+        
+        var provider: DependencyValueProvider<T.KeyType.Value>! = container[objectId] as? DependencyValueProvider<T.KeyType.Value>
+        let key = objectType.injectionKey
+        
+        if provider == nil {
+            container[objectId] = key.valueProvider
+            provider = key.valueProvider
         }
+        
+        return objectFromProvider(provider)
     }
     
     public func register<T: DependencyInjectionKey>(with key: T.Type) {
@@ -38,5 +45,13 @@ public final class DependencyInjectionContainer {
         let key = self[keyPath: keyPath]
         let objectId = ObjectIdentifier(key)
         container[objectId] = key.init().valueProvider
+    }
+    
+    private func objectFromProvider<T>(_ provider: DependencyValueProvider<T>) -> T {
+        return switch provider {
+        case .singleton(let value): value
+        case .created(let fabric): fabric()
+        case .resolved(let resolver): resolver(self)
+        }
     }
 }

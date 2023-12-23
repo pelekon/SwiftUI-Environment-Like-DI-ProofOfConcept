@@ -3,28 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		992EF98D2B2AE39500945860 /* DependencyInjection in Frameworks */ = {isa = PBXBuildFile; productRef = 992EF98C2B2AE39500945860 /* DependencyInjection */; };
+		992EF98F2B2AE56400945860 /* MacroTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992EF98E2B2AE56400945860 /* MacroTest.swift */; };
 		99D79E1B2B0E621C004E0563 /* DependencyInjectionPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E1A2B0E621C004E0563 /* DependencyInjectionPlaygroundApp.swift */; };
 		99D79E1D2B0E621C004E0563 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E1C2B0E621C004E0563 /* ContentView.swift */; };
 		99D79E1F2B0E621D004E0563 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D79E1E2B0E621D004E0563 /* Assets.xcassets */; };
 		99D79E222B0E621D004E0563 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99D79E212B0E621D004E0563 /* Preview Assets.xcassets */; };
-		99D79E3C2B0E6370004E0563 /* DependencyInjection.docc in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E3B2B0E6370004E0563 /* DependencyInjection.docc */; };
 		99D79E422B0E6370004E0563 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D79E382B0E6370004E0563 /* DependencyInjection.framework */; };
 		99D79E492B0E6370004E0563 /* DependencyInjectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E482B0E6370004E0563 /* DependencyInjectionTests.swift */; };
-		99D79E4A2B0E6370004E0563 /* DependencyInjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D79E3A2B0E6370004E0563 /* DependencyInjection.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		99D79E4D2B0E6370004E0563 /* DependencyInjection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D79E382B0E6370004E0563 /* DependencyInjection.framework */; };
 		99D79E4E2B0E6370004E0563 /* DependencyInjection.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 99D79E382B0E6370004E0563 /* DependencyInjection.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		99D79E572B0E638A004E0563 /* DependencyInjectionKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E2F2B0E6319004E0563 /* DependencyInjectionKey.swift */; };
-		99D79E582B0E638D004E0563 /* DependencyValueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E312B0E6342004E0563 /* DependencyValueProvider.swift */; };
-		99D79E5D2B0E63C6004E0563 /* Injected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E5C2B0E63C6004E0563 /* Injected.swift */; };
-		99D79E5F2B0E63DF004E0563 /* DependencyInjectionContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E5E2B0E63DF004E0563 /* DependencyInjectionContainer.swift */; };
 		99D79E622B0E6C19004E0563 /* TestObjectKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E612B0E6C19004E0563 /* TestObjectKey.swift */; };
 		99D79E642B0E6CCA004E0563 /* TestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E632B0E6CCA004E0563 /* TestObject.swift */; };
 		99D79E662B0E7C13004E0563 /* DependencyInjectionContainer+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E652B0E7C13004E0563 /* DependencyInjectionContainer+Keys.swift */; };
-		99D79E682B0E7D62004E0563 /* InjectedOptional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E672B0E7D62004E0563 /* InjectedOptional.swift */; };
 		99D79E6A2B0E7D8D004E0563 /* TestOptionalKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E692B0E7D8D004E0563 /* TestOptionalKey.swift */; };
 		99D79E6C2B0E7DB7004E0563 /* TestOptionalObj.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99D79E6B2B0E7DB7004E0563 /* TestOptionalObj.swift */; };
 /* End PBXBuildFile section */
@@ -68,24 +63,18 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		992EF98E2B2AE56400945860 /* MacroTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroTest.swift; sourceTree = "<group>"; };
 		99D79E172B0E621C004E0563 /* DependencyInjectionPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyInjectionPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D79E1A2B0E621C004E0563 /* DependencyInjectionPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionPlaygroundApp.swift; sourceTree = "<group>"; };
 		99D79E1C2B0E621C004E0563 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		99D79E1E2B0E621D004E0563 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99D79E212B0E621D004E0563 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		99D79E2F2B0E6319004E0563 /* DependencyInjectionKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionKey.swift; sourceTree = "<group>"; };
-		99D79E312B0E6342004E0563 /* DependencyValueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyValueProvider.swift; sourceTree = "<group>"; };
 		99D79E382B0E6370004E0563 /* DependencyInjection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DependencyInjection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		99D79E3A2B0E6370004E0563 /* DependencyInjection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DependencyInjection.h; sourceTree = "<group>"; };
-		99D79E3B2B0E6370004E0563 /* DependencyInjection.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = DependencyInjection.docc; sourceTree = "<group>"; };
 		99D79E412B0E6370004E0563 /* DependencyInjectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DependencyInjectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99D79E482B0E6370004E0563 /* DependencyInjectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionTests.swift; sourceTree = "<group>"; };
-		99D79E5C2B0E63C6004E0563 /* Injected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injected.swift; sourceTree = "<group>"; };
-		99D79E5E2B0E63DF004E0563 /* DependencyInjectionContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyInjectionContainer.swift; sourceTree = "<group>"; };
 		99D79E612B0E6C19004E0563 /* TestObjectKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObjectKey.swift; sourceTree = "<group>"; };
 		99D79E632B0E6CCA004E0563 /* TestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestObject.swift; sourceTree = "<group>"; };
 		99D79E652B0E7C13004E0563 /* DependencyInjectionContainer+Keys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyInjectionContainer+Keys.swift"; sourceTree = "<group>"; };
-		99D79E672B0E7D62004E0563 /* InjectedOptional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectedOptional.swift; sourceTree = "<group>"; };
 		99D79E692B0E7D8D004E0563 /* TestOptionalKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionalKey.swift; sourceTree = "<group>"; };
 		99D79E6B2B0E7DB7004E0563 /* TestOptionalObj.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestOptionalObj.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +85,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D79E4D2B0E6370004E0563 /* DependencyInjection.framework in Frameworks */,
+				992EF98D2B2AE39500945860 /* DependencyInjection in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +111,6 @@
 			isa = PBXGroup;
 			children = (
 				99D79E192B0E621C004E0563 /* DependencyInjectionPlayground */,
-				99D79E392B0E6370004E0563 /* DependencyInjection */,
 				99D79E472B0E6370004E0563 /* DependencyInjectionTests */,
 				99D79E182B0E621C004E0563 /* Products */,
 			);
@@ -157,20 +146,6 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		99D79E392B0E6370004E0563 /* DependencyInjection */ = {
-			isa = PBXGroup;
-			children = (
-				99D79E2F2B0E6319004E0563 /* DependencyInjectionKey.swift */,
-				99D79E312B0E6342004E0563 /* DependencyValueProvider.swift */,
-				99D79E5C2B0E63C6004E0563 /* Injected.swift */,
-				99D79E5E2B0E63DF004E0563 /* DependencyInjectionContainer.swift */,
-				99D79E3A2B0E6370004E0563 /* DependencyInjection.h */,
-				99D79E3B2B0E6370004E0563 /* DependencyInjection.docc */,
-				99D79E672B0E7D62004E0563 /* InjectedOptional.swift */,
-			);
-			path = DependencyInjection;
-			sourceTree = "<group>";
-		};
 		99D79E472B0E6370004E0563 /* DependencyInjectionTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +162,7 @@
 				99D79E652B0E7C13004E0563 /* DependencyInjectionContainer+Keys.swift */,
 				99D79E692B0E7D8D004E0563 /* TestOptionalKey.swift */,
 				99D79E6B2B0E7DB7004E0563 /* TestOptionalObj.swift */,
+				992EF98E2B2AE56400945860 /* MacroTest.swift */,
 			);
 			path = DependencyInjectionTest;
 			sourceTree = "<group>";
@@ -198,7 +174,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D79E4A2B0E6370004E0563 /* DependencyInjection.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +195,9 @@
 				99D79E4C2B0E6370004E0563 /* PBXTargetDependency */,
 			);
 			name = DependencyInjectionPlayground;
+			packageProductDependencies = (
+				992EF98C2B2AE39500945860 /* DependencyInjection */,
+			);
 			productName = DependencyInjectionPlayground;
 			productReference = 99D79E172B0E621C004E0563 /* DependencyInjectionPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -292,6 +270,9 @@
 				Base,
 			);
 			mainGroup = 99D79E0E2B0E621C004E0563;
+			packageReferences = (
+				992EF98B2B2AE39500945860 /* XCLocalSwiftPackageReference "DependencyInjection" */,
+			);
 			productRefGroup = 99D79E182B0E621C004E0563 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -338,6 +319,7 @@
 				99D79E6A2B0E7D8D004E0563 /* TestOptionalKey.swift in Sources */,
 				99D79E1D2B0E621C004E0563 /* ContentView.swift in Sources */,
 				99D79E1B2B0E621C004E0563 /* DependencyInjectionPlaygroundApp.swift in Sources */,
+				992EF98F2B2AE56400945860 /* MacroTest.swift in Sources */,
 				99D79E6C2B0E7DB7004E0563 /* TestOptionalObj.swift in Sources */,
 				99D79E622B0E6C19004E0563 /* TestObjectKey.swift in Sources */,
 				99D79E662B0E7C13004E0563 /* DependencyInjectionContainer+Keys.swift in Sources */,
@@ -348,12 +330,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D79E5F2B0E63DF004E0563 /* DependencyInjectionContainer.swift in Sources */,
-				99D79E572B0E638A004E0563 /* DependencyInjectionKey.swift in Sources */,
-				99D79E582B0E638D004E0563 /* DependencyValueProvider.swift in Sources */,
-				99D79E3C2B0E6370004E0563 /* DependencyInjection.docc in Sources */,
-				99D79E5D2B0E63C6004E0563 /* Injected.swift in Sources */,
-				99D79E682B0E7D62004E0563 /* InjectedOptional.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +416,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -497,6 +474,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -508,7 +486,6 @@
 		99D79E262B0E621D004E0563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -538,7 +515,6 @@
 		99D79E272B0E621D004E0563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -634,7 +610,6 @@
 		99D79E542B0E6370004E0563 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8PXZJYLRK;
@@ -652,7 +627,6 @@
 		99D79E552B0E6370004E0563 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = M8PXZJYLRK;
@@ -707,6 +681,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		992EF98B2B2AE39500945860 /* XCLocalSwiftPackageReference "DependencyInjection" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = DependencyInjection;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		992EF98C2B2AE39500945860 /* DependencyInjection */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = DependencyInjection;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 99D79E0F2B0E621C004E0563 /* Project object */;
 }

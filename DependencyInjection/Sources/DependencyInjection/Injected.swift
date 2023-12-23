@@ -25,5 +25,11 @@ public struct Injected<Value> {
         self.container = container
     }
     
+    public init<T: Injectable>(_ objectType: T.Type,
+                               container: DependencyInjectionContainer = .shared) where T.KeyType.Value == Value {
+        self.value = container[T.self]
+        self.container = container
+    }
+    
     public var wrappedValue: Value { value }
 }

@@ -31,10 +31,12 @@ extension ContentView {
         @Injected(TestObjectKey.self) private var testObject1
         @Injected(\.testObject) private var testObject2
         @InjectedOptional(TestOptionalKey.self) private var optionalObject
+        @Injected(MacroTest.self) private var macroObj
         
         func test() {
             testObject1.test()
             optionalObject?.test()
+            macroObj.test()
         }
     }
 }
