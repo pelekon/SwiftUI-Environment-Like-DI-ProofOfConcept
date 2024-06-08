@@ -36,6 +36,20 @@ public final class DependencyInjectionContainer {
         return objectFromProvider(provider)
     }
     
+    public func getExistingOrAfterRegister<T: DependencyInjectionKey>(_ key: T.Type) -> T.Value? {
+        let objectId = ObjectIdentifier(key)
+        
+        var provider = container[objectId] as? DependencyValueProvider<T.Value>
+        if provider == nil {
+            register(with: key)
+            provider = container[objectId] as? DependencyValueProvider<T.Value>
+        }
+        
+        guard let provider else { return nil }
+        
+        return objectFromProvider(provider)
+    }
+    
     public func register<T: DependencyInjectionKey>(with key: T.Type) {
         let objectId = ObjectIdentifier(key)
         container[objectId] = key.init().valueProvider

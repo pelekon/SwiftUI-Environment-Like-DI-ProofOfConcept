@@ -43,6 +43,7 @@ public struct MakeInjectableMacro: MemberMacro, ExtensionMacro {
         let memberName = "\(typeName.text)\(memberTypeNameSuffix)"
         
         let keySyntax = try makeKeyDeclaration(for: memberName, parentTypeName: typeName, mode: mode)
+        
         return [keySyntax]
     }
     

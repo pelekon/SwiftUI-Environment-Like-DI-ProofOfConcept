@@ -7,5 +7,6 @@ import SwiftSyntaxMacros
 struct DependencyInjectionPlugin: CompilerPlugin {
     let providingMacros: [Macro.Type] = [
         MakeInjectableMacro.self,
+        TempMakeInjectableMacro.self
     ]
 }

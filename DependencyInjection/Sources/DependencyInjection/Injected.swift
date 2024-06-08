@@ -19,9 +19,14 @@ public struct Injected<Value> {
     }
     
     public init<T: DependencyInjectionKey>(_ keyPath: KeyPath<DependencyInjectionContainer, T.Type>,
+                                           canRegister: Bool = false,
                                            container: DependencyInjectionContainer = .shared) where T.Value == Value {
         let keyType = container[keyPath: keyPath]
-        self.value = container[keyType]!
+        if canRegister {
+            self.value = container.getExistingOrAfterRegister(keyType)!
+        } else {
+            self.value = container[keyType]!
+        }
         self.container = container
     }
     
