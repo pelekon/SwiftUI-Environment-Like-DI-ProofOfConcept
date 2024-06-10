@@ -192,6 +192,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				99D495B02C1593C300CBCEE1 /* PBXTargetDependency */,
 				99D79E4C2B0E6370004E0563 /* PBXTargetDependency */,
 			);
 			name = DependencyInjectionPlayground;
@@ -344,6 +345,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		99D495B02C1593C300CBCEE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 99D495AF2C1593C300CBCEE1 /* DependencyInjectionPlugin */;
+		};
 		99D79E442B0E6370004E0563 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 99D79E372B0E6370004E0563 /* DependencyInjection */;
@@ -693,6 +698,11 @@
 		992EF98C2B2AE39500945860 /* DependencyInjection */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = DependencyInjection;
+		};
+		99D495AF2C1593C300CBCEE1 /* DependencyInjectionPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 992EF98B2B2AE39500945860 /* XCLocalSwiftPackageReference "DependencyInjection" */;
+			productName = "plugin:DependencyInjectionPlugin";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

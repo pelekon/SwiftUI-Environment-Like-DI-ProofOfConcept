@@ -11,10 +11,12 @@ import DependencyInjection
 @main
 struct DependencyInjectionPlaygroundApp: App {
     init() {
-        DependencyInjectionContainer.shared.register(with: TestObjectKey.self)
-        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
-        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
-        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
+//        DependencyInjectionContainer.shared.register(with: TestObjectKey.self)
+//        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
+//        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
+//        DependencyInjectionContainer.shared.register(keyPath: \.optionalTest)
+//        DependencyInjectionContainer.registerAllDependencies(to: .shared)
+        DependencyInjectionContainer.registerAllDependencies(to: .shared)
     }
     
     var body: some Scene {

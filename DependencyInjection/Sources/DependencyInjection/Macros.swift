@@ -11,5 +11,6 @@ public macro MakeInjectable(_ mode: InjectionMode) = #externalMacro(module: "Dep
 public macro TestMakeInjectable<T>(
     for type: T.Type, 
     mode: InjectionMode,
-    keyName: String? = nil
+    keyName: String? = nil,
+    skipInAutoGen: Bool = false
 ) = #externalMacro(module: "DependencyInjectionMacros", type: "TempMakeInjectableMacro")

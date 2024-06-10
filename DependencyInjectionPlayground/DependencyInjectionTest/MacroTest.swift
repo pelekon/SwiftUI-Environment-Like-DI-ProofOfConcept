@@ -16,6 +16,15 @@ final class MacroTest {
     }
 }
 
+struct IgnoredObj { }
+
+struct AnotherObj { }
+
 @TestMakeInjectable(for: MacroTest.self, mode: .singleton)
 extension DependencyInjectionContainer { }
 
+@TestMakeInjectable(for: IgnoredObj.self, mode: .singleton, skipInAutoGen: true)
+extension DependencyInjectionContainer { }
+
+@TestMakeInjectable(for: AnotherObj.self, mode: .singleton, keyName: "testKey")
+extension DependencyInjectionContainer { }
